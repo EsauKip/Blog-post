@@ -19,7 +19,7 @@ def login():
     title = "Quote login"
     return render_template('auth/login.html',login_form = login_form,title=title)
 
-    
+
 @auth.route('/register', methods = ["GET","POST"])
 def register():
     form = RegistrationForm()
@@ -35,3 +35,11 @@ def register():
     title = "New Account"
 
     return render_template('auth/register.html',registration_form = form,title = title)    
+
+
+@auth.route('/logout')
+@login_required
+def logout():
+    logout_user()
+    flash('You are logged out')
+    return redirect(url_for("main.index"))   
