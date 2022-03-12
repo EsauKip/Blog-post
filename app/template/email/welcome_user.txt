@@ -1,0 +1,5 @@
+
+  
+Hello {{user.username}}
+Welcome to our blogs ...Feel free to share your quotes and commentson other people's quotes on this blog
+Welcome! Welcome!
