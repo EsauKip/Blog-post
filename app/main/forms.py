@@ -22,3 +22,7 @@ class UpdateBlogForm(FlaskForm):
     blog_title = StringField("Title", validators=[DataRequired()])
     blog_content = TextAreaField("Type Updates", validators=[DataRequired()])
     submit = SubmitField("Update")
+    
+class UpdateProfile(FlaskForm):
+    bio = TextAreaField('Tell us about you.',validators = [DataRequired()])
+    submit = SubmitField('Submit')
