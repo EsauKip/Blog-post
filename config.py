@@ -6,7 +6,7 @@ class Config:
     General configuration parent class
     '''
     
-    SQLALCHEMY_DATABASE_URI ='postgresql+psycopg2://moringa:kiprono12@localhost/post'
+    SQLALCHEMY_DATABASE_URI ='postgresql+psycopg2://moringa:kiprono12@localhost/blogpost'
     UPLOADED_PHOTOS_DEST ='app/static/photos'
 
     
